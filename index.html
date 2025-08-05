@@ -2,17 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pterodactyl Panel - by Tmaqnir</title>
+  <title>TmaqnirHost - Login</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      box-sizing: border-box;
-    }
-
     body {
       background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -23,36 +18,27 @@
       background-color: #1e293b;
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.15);
+      box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.1);
       width: 350px;
     }
 
     .login-container h2 {
-      color: #38bdf8;
       text-align: center;
       margin-bottom: 25px;
+      color: #38bdf8;
     }
 
-    .input-group {
-      margin-bottom: 20px;
-    }
-
-    .input-group label {
-      color: #cbd5e1;
-      display: block;
-      margin-bottom: 8px;
-    }
-
-    .input-group input {
+    .login-container input {
       width: 100%;
       padding: 10px;
-      border-radius: 6px;
+      margin-bottom: 15px;
       border: none;
+      border-radius: 6px;
       background-color: #334155;
-      color: #f8fafc;
+      color: #f1f5f9;
     }
 
-    .login-btn {
+    .login-container button {
       width: 100%;
       padding: 12px;
       background-color: #38bdf8;
@@ -61,11 +47,6 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .login-btn:hover {
-      background-color: #0ea5e9;
     }
 
     .error {
@@ -78,16 +59,10 @@
 </head>
 <body>
   <div class="login-container">
-    <h2>Pterodactyl Panel</h2>
-    <div class="input-group">
-      <label>Username</label>
-      <input type="text" id="username" placeholder="Insert Username">
-    </div>
-    <div class="input-group">
-      <label>Password</label>
-      <input type="password" id="password" placeholder="Insert Password">
-    </div>
-    <button class="login-btn" onclick="login()">Login</button>
+    <h2>TmaqnirHost</h2>
+    <input type="text" id="username" placeholder="Username (admin)">
+    <input type="password" id="password" placeholder="Password (admin)">
+    <button onclick="login()">Login</button>
     <div class="error" id="error-msg">Invalid credentials</div>
   </div>
 
